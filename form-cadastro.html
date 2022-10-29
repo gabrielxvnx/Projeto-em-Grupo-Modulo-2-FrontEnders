@@ -16,7 +16,7 @@
 
   <div class="container">
 		<!--Nav e Header-->
-        <header class="head my-3">
+        <header class="head my-3 head-fc">
             <nav class="navbar navbar-expand-lg navbar-light head__custom-nav">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="img/rocket-ship-svgrepo-com.png" alt="logotipo">
@@ -39,8 +39,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contato.html">Contato</a>
                         </li>
-                        <li class="nav-item btn-login">
-                            <a class="btn  text-uppercase btn-success ml-lg-5" href="login.html">Login</a>
+                        <li class="nav-item btn-login ml-lg-5">
+                            <a class="btn  text-uppercase btn-success ml-lg-5 botao-login" href="login.html">Login</a>
                             
                         </li>
                     </ul>
@@ -81,7 +81,7 @@
                 <label for="email">E-mail</label>
             </div>
             <div class="form-floating col-12 col-sm-6 mb-3 mb-sm-0">
-                <input type="text" class="form-control shadow-none" id="RG" name="RG" placeholder="RG" maxlength="9" required>
+                <input type="number" maxlength="9" class="form-control shadow-none" id="RG" name="RG" placeholder="RG" required  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)">
                 <label for="RG">RG</label>
             </div>
         </div>
@@ -111,7 +111,7 @@
                 <label for="address">Rua</label>
             </div>
             <div class="form-floating col-12 col-sm-6 mb-3 mb-sm-0">
-                <input type="text" class="form-control shadow-none" id="number" name="number" placeholder="Número" data-input disabled required>
+                <input type="number" class="form-control shadow-none" id="number" name="number" placeholder="Número" data-input disabled required>
                 <label for="number">Número</label>
             </div>
         </div>
@@ -163,7 +163,7 @@
                 </select>
             </div>
         </div>
-        <input type="checkbox" name="agreement">
+        <input type="checkbox" name="agreement" required>
         <label for="agreement" >Eu li e aceito <a href="termodeuso.html">os termos de uso!</a></label> <br><br>
         <div class="d-flex justify-content-end">
             <button type="submit" class="btn-login">Cadastrar</button>
