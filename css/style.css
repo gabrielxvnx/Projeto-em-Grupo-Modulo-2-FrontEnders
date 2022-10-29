@@ -8,7 +8,11 @@ background: #0B0045;
 
 }
 
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 /* Landing Page */ 
 .head__custom-nav .navbar-brand img {
@@ -172,6 +176,11 @@ background: #0B0045;
 	text-align: center;
 	border-radius: 50%;
 }
+
+.botao-login{
+  margin-left: 4rem;
+  background: #218838;
+}
 .testi-carousel .owl-dot.active, .clients-carousel .owl-dot.active, .testi-carousel-three .owl-dot.active {
 	background-color: blueviolet;
 }
@@ -198,6 +207,12 @@ background: #0B0045;
 }
 
 /*DEPOIMENTOS*/
+
+.head-fc{
+  padding: 0 3.5rem;
+}
+
+
 
 
 /*grid secção compartilhe o conhecimento*/
